@@ -4,6 +4,7 @@ def read_file(location):
   lines = file.readlines()
   for l in lines:
     words.extend(l.split())
+    words[-1]+="\n"
   return words
 def write_file(location,list_of_words):
   file=open(location,"w")
