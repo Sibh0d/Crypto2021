@@ -8,6 +8,6 @@ def read_file(location):
 def write_file(location,list_of_words):
   file=open(location,"w")
   for w in list_of_words:
-    file.write(w)
+    file.write(w+" ")
 print(read_file("Poem"))
-write_file("Poem2","This is an even longer string of gibberish.")
+write_file("Poem2",read_file("Poem"))
