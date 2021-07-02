@@ -4,11 +4,18 @@ def read_file(location):
   lines = file.readlines()
   for l in lines:
     words.extend(l.split())
-    words[-1]+="\n"
+    #words[-1]+="\n"
+    words.append("\n")
   return words
 def write_file(location,list_of_words):
   file=open(location,"w")
   for w in list_of_words:
-    file.write(w+" ")
+    #if w[-2:]!="\n":
+    if w !="\n":
+      file.write(w+" ")
+    else:
+      file.write(w)
+    #else:
+    #  file.write(w)
 print(read_file("Poem"))
 write_file("Poem2",read_file("Poem"))
