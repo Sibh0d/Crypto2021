@@ -1,0 +1,114 @@
+Using the random substitution cipher-
+My message - Hello, how are you doing? ITSSG, IGV QKT NGX RGOFU?
+Marlyse’s message - IGV QKT NGX RGOFU ZGRQN How are you doing today?
+The random substitution cipher takes a key and converts it into a different letter. To do this, a key is stored in an array and a function returns the key letter at index letter value. To decrypt, find the letter that has a letter value equal to the index of the ciphertext letter.
+Created a Caesar cipher cracking program. It brute forces and searches the decoded messages for certain keywords. Whichever message contains the most is likely the original, therefore we print it.
+My message - Ghm max ltfx fxlltzx tl xtkebxk. 19. 
+Decodes to - Not the same message as earlier.
+David’s message - Bqdeuefqzoq ue ftq wqk fa qjoqxxqzoq, ngf xqf'e nq dqmx, ftue yqeemsq fmwqe 5 eqoazpe fa pqoapq. 12
+Decodes to - Persistence is the key to excellence, but let's be real, this message takes 5 seconds to decode.
+https://replit.com/join/xyfkddenni-simchaberdy
+Applying a Caesar shift to my name: cswmrk nyf lobni.
+Ord-A function that returns the ascii value of its parameter.
+Chr-Function that converts an ascii value to a character.
+To get the alphabetic value of a letter, convert it into its ascii value, and subtract the ascii value of “a”or “A” depending on the case. Then add the key and apply modular mathematics equal to the length of the alphabet. Finally add the ascii value of “a” or “A” depending on the case, and use chr to convert it back into a letter. Decrypting the letter involves getting the ascii value, subtracting the key, modular 26, add “a” or “A” depending on the case. Finally, convert it back into text.
+Each letter is encoded separately. When converting words, the convert letter code is looped. The sam process is used when converting the whole message except it loops the convert word code.
+Sprint2 code for encryption and decryption can be located at https://replit.com/@JamesTodaro/Sprint2-Notes#main.py.
+Practically smooth sailing.
+Python Intro-
+Print-Print is a function that prints to the log.
+Variable-A word,  character or symbol representing a value or values. These can hold many different data types. This includes strings, lists, integers, floats, complexes, booleans, and several others.
+Function-A word that performs a set of actions. Often takes parameters within parenthesis which can be used within the function.
+Comments-Both the hashtag and triple quotes can be used to comment. The hashtag comments out the rest of a line, and the triple quotes initiates a multiline comment.
+Loops-Using the keyword for, one can iterate through an array with a variable representing the value at the current position.
+Open-Opens a file for reading or writing.
+Write-Writes into a file. (Appends to the end.)
+Using Replit, we created functions were created read from and write to files. When reading, it took all the words in the file and added it to an array with a newline character being added at the end of each line. The write function took in a list of words and wrote it into a separate file. 
+Link to Replit-https://replit.com/@SimchaBerdy/Crypto2021?from=notifications#main.py
+Ascii-A chart of 128 characters that includes commonly used symbols, letters, values, and button presses.
+To apply the Caesar cipher  to text, we will convert each letter to it’s ascii value, subtract the first letter, apply the key, and  apply modal mathematics to create the cipher text. Cipher letter=(Original letter+key) mod(26).
+Frequency Analysis-Matching letter distribution in the cipher text to letters in the plain text by comparing relative frequencies.
+Footprint-The language’s natural letter distribution.
+Polyalphabetic Shift-Using a keyword, you apply a Caesar shift by repeating the word along the whole plain text and applying the letter as a key.
+Humans find it difficult to generate random numbers.Nature and irrational numbers are far better. Algorithms cannot generate truly random numbers unless it is fed random information. An attempt at algorithmic random number was taking a seed, starting number, squaring it, and taking the middle numbers.
+Rotor Encryption-Rotors would rotate inside creating a new key for each letter. The initial configuration and the machine were the only things necessary to allow communication.
+Enigma Code-Rotors had wires which redirected current through several other rotors and returned a letter other than the initial letter. Each rotor was able to switch positions, and can change orientation. After each keypress, the rotor changes orientation.
+Code Book-List of words or symbols that represent another, usually longer, string or symbol.
+Cipher-Using an algorithm key, we convert the plain text into cipher text.
+Bitwise Operations-
+And-If both inputs are true, the output is true. Only one out of four scenarios lead to the output being true. Equivalent to multiplying both values.
+Or-If either input is true, the output is true. Only one out of four scenarios lead to the output being false. Equivalent to adding the values and then subtracting the product of the two numbers.
+Xor-If either input is true, but not both, the output is true.There are an equal number of scenarios that will lead to each output. Equivalent to adding the values and then subtracting the product of twice the two numbers.
+Random Substitution Cipher-Each letter is randomly substituted by other letters.
+1.The room in which the murder was commited has a number. 2.The murderer does not have an e in ther name. 3.The murder was not in a prime number room. 4. The murder was not done with a sharp metal object (can’t remember exact wording) 5.The room number is a multiple of four. 6.The Murderer’s name will tell you what country he is from. 7.His room number has eight factors. 8.But how did he do it? Perhaps with something students sit on. The Murder In the Math Department murderer was Mr. Scotlland in room 24 with a chair. The final chipher was WELL DONE! YOU HAVE BROKEN THE CODE AND CAUGHT ME. SO BEFORE I GO TO PRISON I WILL REWARD YOU WITH A LITTLE BIT OF MY KNOWLEDGE ABOUT CODES. THERE ARE MANY WAYS TO BREAK A MESSAGE THAT HAS BEEN ENCODED USING A CIPHER. HOWEVER, THE BEST WAY TO ATTACK SUCH A MESSAGE IS USING FREQUENCY ANALYSIS. THIS USES THE FACT THAT EVERY LANGUAGE HAS CERTAIN LETTERS THAT OCCUR MORE FREQUENTLY THAN OTHERS. OF COURSE, NOT EVERY PIECE OF TEXT HAS THE SAME LETTER DISTRIBUTION, SO THE PERSON BREAKING THE CODE HAS TO USE A CERTAIN AMOUNT OF INGENUITY AND PROBLEM SOLVING SKILLS TO CRACK THE CODE. THIS IS WHY THE SCIENCE OF CRYPTOGRAPHY IS AN APPLIED SUBJECT OF MATHEMATICS.
+Alphabet Cipher-Converting each letter to the corresponding number. “A” is the 1st letter, and therefore will be 1; “B”,2…
+E.x. 25 15 21 7 15 20 20 8 9 19 is cipher text for YOU GOT THIS.
+Phone Cipher-Using the number that appears on the same button on a phone as the letter we are trying to encode.
+E.x. 84304702026666609673 is cipher text for THE IS A COMMON WORD.
+Atbash Cipher-Inverting the alphabet so the first letter letter becomes the last letter. A becomes z, b becomes y…
+E.x.Xibkgltizksb rh ufm is cipher text for CRYPTOGRAPHY IS FUN.
+Caesar Cipher-Shift each letter equal to the key so that each letter is substituted by the one that is “key” over. TOOL- https://cryptii.com/pipes/caesar-cipher
+E.x. Aopz pz lhzf dpao aol ypnoa avvsz is cipher text for THIS IS EASY WITH THE RIGHT TOOLS
+Morse Code-Substitution cipher replacing every letter for a series of dots and dashes.
+E.X. .- .-.. -- --- ... - / -.. --- -. .is cipher text for ALMOST DONE
+
+
+Search CodeWorks 2021
+
+
+
+
+CodeWorks 2021
+
+
+
+
+
+
+
+
+cybersecurity
+
+
+
+
+21
+Loading history...
+
+James Todaro  7:59 AM
+Sprint 2 Notes: https://replit.com/join/oqedqddglh-jamestodaro
+replitreplit
+Invitation to collaborate on Sprint2 Notes
+Code together live on Sprint2 Notes, a Python by JamesTodaro, with Replit multiplayer
+
+Marlyse n  12:03 PM
+qebob fp pljblkb ybefka vlr     is my encrypted message, the key is 23
+
+James Todaro  8:52 AM
+don't forget to sign up for the orioles tickets if you want to go to the game on friday
+James Todaro  10:52 AM
+https://replit.com/join/fxobaprhry-jamestodaro
+replitreplit
+Invitation to collaborate on Sprint3Notes
+Code together live on Sprint3Notes, a Python by JamesTodaro, with Replit multiplayer
+10:56
+random sub key:
+image.png 
+image.png
+white_check_mark
+eyes
+raised_hands
+React
+Reply
+Send a message to cybersecurity
+Slack needs your permission to enable notifications. Enable notifications
+zenameblackoutworriedthatourcipheristooweakonnextmessageswitchtovigenerecipherkeywordisthehiddensymbolofdeathinmyfavoriteholbeinend
+white_check_mark
+eyes
+raised_hands
+React
+Reply
+1:24
+startigrabbedeverythingicouldfindpleasereturnanyblueprintsforvaultandalarmdesignbasedonwhichbankyoudecideoniamsettingupsafehouseco
+1:24
+Startwarningiheardreportofourbreakinonthenewsstillwaitingonalarmtestschedulesiwillreportbacktomorrowwithfinalplanforextrasecurityisuggestweburnourlettersafterreadingandswitchourletterstonumbersusingpolybiussquaredropmessageunderthebenchattrainstationend

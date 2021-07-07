@@ -5,37 +5,37 @@ def generate_key():
  while len(alphabet) > 0:
    key.append(alphabet.pop(random.randint(0,len(alphabet) - 1)))
  return key
-def rndl(T,K):
+def rndls(T,K):
   if T.islower():
     return K[ord(T)-ord('a')]
   elif T.isupper():
     return K[ord(T)-ord('A')].upper()
   else:
     return T
-def rndw(T,K):
+def rndws(T,K):
   w=""
   for l in T:
-    w+=rndl(l,K)
+    w+=rndls(l,K)
   return w
-def rndm(T,K):
+def rndms(T,K):
   m=[]
   for w in T:
-    m.append(rndw(w,K))
+    m.append(rndws(w,K))
   return m
-def drndl(T,K):
+def drndls(T,K):
   if T.islower():
     return chr(K.index(T)+ord('a'))
   elif T.isupper():
     return chr(K.index(T.lower())+ord("A")).upper()
   else:
     return T
-def drndw(T,K):
+def drndws(T,K):
   w=""
   for l in T:
-    w+=drndl(l,K)
+    w+=drndls(l,K)
   return w
-def drndm(T,K):
+def drndms(T,K):
   m=[]
   for w in T:
-    m.append(drndw(w,K))
+    m.append(drndws(w,K))
   return m
