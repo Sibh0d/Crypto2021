@@ -6,9 +6,9 @@ def generate_key():
    key.append(alphabet.pop(random.randint(0,len(alphabet) - 1)))
  return key
 def rndls(T,K):
-  if T.islower():
+  if ord(T)>=ord('a') and ord(T)<=ord('z'):
     return K[ord(T)-ord('a')]
-  elif T.isupper():
+  elif ord(T)>=ord('Z') and ord(T)<=ord('Z'):
     return K[ord(T)-ord('A')].upper()
   else:
     return T
@@ -23,9 +23,9 @@ def rndms(T,K):
     m.append(rndws(w,K))
   return m
 def drndls(T,K):
-  if T.islower():
+  if ord(T)>=ord('a') and ord(T)<=ord('z'):
     return chr(K.index(T)+ord('a'))
-  elif T.isupper():
+  elif ord(T)>=ord('A') and ord(T)<=ord('Z'):
     return chr(K.index(T.lower())+ord("A")).upper()
   else:
     return T
